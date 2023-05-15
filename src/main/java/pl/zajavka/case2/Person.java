@@ -2,7 +2,7 @@ package pl.zajavka.case2;
 
 import java.math.BigDecimal;
 
-record Person(String name, String surname, BigDecimal salary) {
+record Person(String name, String surname, BigDecimal salary, Long age) {
 
     public String whatIsYourJob() {
         return "Software developer!";
@@ -11,14 +11,16 @@ record Person(String name, String surname, BigDecimal salary) {
     public String whatDoYouLike() {
         return "Strawberries";
     }
-    public BigDecimal howMuchDoYouEarn() {
-        return salary;
-    }
-    public Boolean doYouLikePizza() {
-        return true;
-    }
 
     public Boolean doYouHaveABike() {
         return true;
     }
+
+    public Boolean doYouLikePizza() {
+        return true;
+    }
+    public BigDecimal howMuchDoYouEarn() {
+        return salary;
+    }
+
 }
